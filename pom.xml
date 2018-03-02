@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.test</groupId>
 	<artifactId>maven-release-plugin-example</artifactId>
-	<version>0.2</version>
+	<version>0.2-SNAPSHOT</version>
 	<scm>
 		<url>https://github.com/sundeepbobba/maven-release-plugin-example</url>
 		<connection>scm:git:git@github.com:sundeepbobba/maven-release-plugin-example.git</connection>
@@ -14,8 +14,13 @@
 		<repository>
 			<id>nexus-releases</id>
 			<!-- http://localhost:8081/repository/<repository-name> -->
-			<url>http:http://0.0.0.0:8081/repository/Releases/</url>
+			<url>http://0.0.0.0:8081/repository/Releases/</url>
 		</repository>
+                <snapshotRepository>
+                        <id>test</id>
+                        <!-- http://localhost:8081/repository/<repository-name> -->
+                        <url>http://0.0.0.0:8081/repository/Snapshots/</url>
+                </snapshotRepository>
 	</distributionManagement>
 	<profiles>
 		<profile>
