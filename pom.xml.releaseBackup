@@ -12,12 +12,12 @@
 	<!-- Repository Information -->
 	<distributionManagement>
 		<repository>
-			<id>test</id>
+			<id>nexusrelease</id>
 			<!-- http://localhost:8081/repository/<repository-name> -->
 			<url>http://127.0.0.1:8081/repository/maven-releases/</url>
 		</repository>
                 <snapshotRepository>
-                        <id>test</id>
+                        <id>nexussnapshots</id>
                         <!-- http://localhost:8081/repository/<repository-name> -->
                         <url>http://127.0.0.1:8081/repository/maven-snapshots/</url>
                 </snapshotRepository>
